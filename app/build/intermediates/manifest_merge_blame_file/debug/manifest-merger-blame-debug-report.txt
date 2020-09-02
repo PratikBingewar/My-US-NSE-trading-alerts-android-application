@@ -1,0 +1,471 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.stocksbuyalerts.alexey.zonetradingalerts"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:5:5-67
+11-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:6:5-79
+12-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0d918e27b30faf14b0db2087afc900db\firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:24:5-68
+13-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0d918e27b30faf14b0db2087afc900db\firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:26:5-110
+14-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:26:22-107
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:26:5-82
+15-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:26:22-79
+16
+17    <application
+17-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:8:5-37:19
+18        android:allowBackup="true"
+18-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:9:9-35
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher_1"
+20-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:10:9-45
+21        android:label="@string/app_name"
+21-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:11:9-41
+22        android:roundIcon="@mipmap/ic_launcher_1_round"
+22-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:12:9-56
+23        android:supportsRtl="true"
+23-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:13:9-35
+24        android:theme="@style/AppTheme" >
+24-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:14:9-40
+25        <activity android:name="com.stocksbuyalerts.alexey.zonetradingalerts.MainActivity" >
+25-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:15:9-21:20
+25-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:15:19-47
+26            <intent-filter>
+26-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:17:17-69
+27-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:19:17-77
+29-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:22:9-25:59
+33            android:name="com.stocksbuyalerts.alexey.zonetradingalerts.ChartActivity"
+33-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:23:13-42
+34            android:screenOrientation="landscape"
+34-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:24:13-50
+35            android:theme="@style/AppTheme.NoActionBar" />
+35-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:25:13-56
+36        <activity android:name="com.stocksbuyalerts.alexey.zonetradingalerts.AddWidgetActivity" />
+36-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:26:9-55
+36-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:26:19-52
+37
+38        <receiver android:name="com.stocksbuyalerts.alexey.zonetradingalerts.widget.PriceTrackingWidget" >
+38-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:28:9-36:20
+38-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:28:19-61
+39            <intent-filter>
+39-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:29:13-31:29
+40                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+40-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:30:17-84
+40-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:30:25-81
+41            </intent-filter>
+42
+43            <meta-data
+43-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:33:13-35:70
+44                android:name="android.appwidget.provider"
+44-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:34:17-58
+45                android:resource="@xml/price_tracking_widget_info" />
+45-->F:\android workspace\Zone-Trading-Alerts-Android-App\app\src\main\AndroidManifest.xml:35:17-67
+46        </receiver>
+47
+48        <meta-data
+48-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:16:9-18:69
+49            android:name="com.google.android.gms.version"
+49-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:17:13-58
+50            android:value="@integer/google_play_services_version" />
+50-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:18:13-66
+51        <meta-data
+51-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:19:9-21:63
+52            android:name="com.facebook.sdk.ApplicationId"
+52-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:20:13-58
+53            android:value="@string/facebook_application_id" />
+53-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:21:13-60
+54
+55        <activity
+55-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:23:9-27:61
+56            android:name="com.firebase.ui.auth.KickoffActivity"
+56-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:24:13-64
+57            android:exported="false"
+57-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:25:13-37
+58            android:label=""
+58-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:26:13-29
+59            android:theme="@style/FirebaseUI.Transparent" />
+59-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:27:13-58
+60        <activity
+60-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:28:9-32:61
+61            android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity"
+61-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:29:13-76
+62            android:exported="false"
+62-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:30:13-37
+63            android:label=""
+63-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:31:13-29
+64            android:theme="@style/FirebaseUI.Transparent" />
+64-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:32:13-58
+65        <activity
+65-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:33:9-37:61
+66            android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity"
+66-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:34:13-86
+67            android:exported="false"
+67-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:35:13-37
+68            android:label=""
+68-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:36:13-29
+69            android:theme="@style/FirebaseUI.Transparent" />
+69-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:37:13-58
+70        <activity
+70-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:38:9-58:20
+71            android:name="com.firebase.ui.auth.ui.provider.GitHubLoginActivity"
+71-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:39:13-80
+72            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+72-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:40:13-96
+73            android:label=""
+73-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:41:13-29
+74            android:launchMode="singleTop"
+74-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:42:13-43
+75            android:theme="@style/FirebaseUI.Transparent" >
+75-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:43:13-58
+76            <intent-filter android:autoVerify="true" >
+76-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:44:13-57:29
+76-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:45:17-42
+77                <action android:name="android.intent.action.VIEW" />
+77-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:47:17-69
+77-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:47:25-66
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:49:17-76
+79-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:49:27-73
+80                <category android:name="android.intent.category.BROWSABLE" />
+80-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:50:17-78
+80-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:50:27-75
+81
+82                <data
+82-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:52:17-56:64
+83                    android:host="@string/firebase_web_host"
+83-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:53:21-61
+84                    android:path="/__/auth/handler"
+84-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:54:21-52
+85                    android:scheme="https" />
+85-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:55:21-43
+86            </intent-filter>
+87        </activity>
+88        <activity
+88-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:59:9-63:58
+89            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+89-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:60:13-81
+90            android:exported="false"
+90-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:61:13-37
+91            android:label="@string/fui_title_recover_password_activity"
+91-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:62:13-72
+92            android:windowSoftInputMode="adjustResize" />
+92-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:63:13-55
+93        <activity
+93-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:64:9-68:58
+94            android:name="com.firebase.ui.auth.ui.email.EmailActivity"
+94-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:65:13-71
+95            android:exported="false"
+95-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:66:13-37
+96            android:label="@string/fui_sign_in_default"
+96-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:67:13-56
+97            android:windowSoftInputMode="adjustResize" />
+97-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:68:13-55
+98        <activity
+98-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:69:9-73:77
+99            android:name="com.firebase.ui.auth.ui.phone.PhoneActivity"
+99-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:70:13-71
+100            android:exported="false"
+100-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:71:13-37
+101            android:label="@string/fui_sign_in_with_phone_number"
+101-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:72:13-66
+102            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+102-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:73:13-74
+103        <activity
+103-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:74:9-78:58
+104            android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt"
+104-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:75:13-76
+105            android:exported="false"
+105-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:76:13-37
+106            android:label="@string/fui_title_welcome_back_idp_prompt"
+106-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:77:13-70
+107            android:windowSoftInputMode="adjustResize" />
+107-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:78:13-55
+108        <activity
+108-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:79:9-83:58
+109            android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt"
+109-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:80:13-83
+110            android:exported="false"
+110-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:81:13-37
+111            android:label="@string/fui_title_welcome_back_password_prompt"
+111-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:82:13-75
+112            android:windowSoftInputMode="adjustResize" />
+112-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:83:13-55
+113        <activity
+113-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:84:9-87:65
+114            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+114-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:85:13-80
+115            android:exported="false"
+115-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:86:13-37
+116            android:label="@string/fui_default_toolbar_title" />
+116-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:87:13-62
+117        <activity
+117-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:88:9-92:48
+118            android:name="com.facebook.FacebookActivity"
+118-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:89:13-57
+119            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+119-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:90:13-96
+120            android:label="@string/app_name" />
+120-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:91:13-45
+121        <activity
+121-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:93:9-105:20
+122            android:name="com.facebook.CustomTabActivity"
+122-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:94:13-58
+123            android:exported="true" >
+123-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:95:13-36
+124            <intent-filter>
+124-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:97:13-104:29
+125                <action android:name="android.intent.action.VIEW" />
+125-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:47:17-69
+125-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:47:25-66
+126
+127                <category android:name="android.intent.category.DEFAULT" />
+127-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:49:17-76
+127-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:49:27-73
+128                <category android:name="android.intent.category.BROWSABLE" />
+128-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:50:17-78
+128-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:50:27-75
+129
+130                <data android:scheme="@string/facebook_login_protocol_scheme" />
+130-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:52:17-56:64
+130-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:55:21-43
+131            </intent-filter>
+132        </activity>
+133
+134        <provider
+134-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:107:9-111:38
+135            android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
+135-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:108:13-79
+136            android:authorities="com.stocksbuyalerts.alexey.zonetradingalerts.authuiinitprovider"
+136-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:109:13-70
+137            android:exported="false"
+137-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:110:13-37
+138            android:initOrder="90" />
+138-->[com.firebaseui:firebase-ui-auth:4.1.0] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f3ea6b735935745baea1f505a168c414\firebase-ui-auth-4.1.0\AndroidManifest.xml:111:13-35
+139
+140        <activity
+140-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:23:9-29:75
+141            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+141-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:24:13-85
+142            android:excludeFromRecents="true"
+142-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:25:13-46
+143            android:exported="true"
+143-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:26:13-36
+144            android:launchMode="singleInstance"
+144-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:27:13-48
+145            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+145-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:28:13-102
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:29:13-72
+147
+148        <service
+148-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:31:9-35:19
+149            android:name="com.google.firebase.components.ComponentDiscoveryService"
+149-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:31:18-89
+150            android:exported="false" >
+150-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:31:13-37
+151            <meta-data
+151-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:32:13-34:85
+152                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+152-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:33:17-109
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\348e7b13c473b6f3fc5aca3a7f969262\firebase-auth-16.0.3\AndroidManifest.xml:34:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0d918e27b30faf14b0db2087afc900db\firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:28:13-30:85
+155                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+155-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0d918e27b30faf14b0db2087afc900db\firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:29:17-139
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-measurement-connector-impl:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0d918e27b30faf14b0db2087afc900db\firebase-measurement-connector-impl-17.0.1\AndroidManifest.xml:30:17-82
+157            <meta-data
+157-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:32:13-34:85
+158                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+158-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:33:17-96
+159                android:value="com.google.firebase.components.ComponentRegistrar" />
+159-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:34:17-82
+160        </service>
+161        <!--
+162             FirebaseMessagingService performs security checks at runtime,
+163             no need for explicit permissions despite exported="true"
+164        -->
+165        <service
+165-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:28:9-34:19
+166            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+166-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:29:13-82
+167            android:exported="true" >
+167-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:30:13-36
+168            <intent-filter android:priority="-500" >
+168-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:31:13-33:29
+168-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:31:28-51
+169                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+169-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:32:17-78
+169-->[com.google.firebase:firebase-messaging:17.3.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\57d8b524faba6777d17ff079689bac14\firebase-messaging-17.3.1\AndroidManifest.xml:32:25-75
+170            </intent-filter>
+171        </service>
+172
+173        <provider
+173-->[com.squareup.picasso:picasso:2.71828] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\d6c6777427ae5c8ff5d1788f364e2fdc\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+174            android:name="com.squareup.picasso.PicassoProvider"
+174-->[com.squareup.picasso:picasso:2.71828] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\d6c6777427ae5c8ff5d1788f364e2fdc\picasso-2.71828\AndroidManifest.xml:9:13-64
+175            android:authorities="com.stocksbuyalerts.alexey.zonetradingalerts.com.squareup.picasso"
+175-->[com.squareup.picasso:picasso:2.71828] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\d6c6777427ae5c8ff5d1788f364e2fdc\picasso-2.71828\AndroidManifest.xml:10:13-72
+176            android:exported="false" />
+176-->[com.squareup.picasso:picasso:2.71828] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\d6c6777427ae5c8ff5d1788f364e2fdc\picasso-2.71828\AndroidManifest.xml:11:13-37
+177        <provider
+177-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\1c74f1e6d58a84e0d19ebcaee7b2b1af\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+178            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+178-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\1c74f1e6d58a84e0d19ebcaee7b2b1af\extensions-1.1.1\AndroidManifest.xml:24:13-83
+179            android:authorities="com.stocksbuyalerts.alexey.zonetradingalerts.lifecycle-trojan"
+179-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\1c74f1e6d58a84e0d19ebcaee7b2b1af\extensions-1.1.1\AndroidManifest.xml:25:13-68
+180            android:exported="false"
+180-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\1c74f1e6d58a84e0d19ebcaee7b2b1af\extensions-1.1.1\AndroidManifest.xml:26:13-37
+181            android:multiprocess="true" />
+181-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\1c74f1e6d58a84e0d19ebcaee7b2b1af\extensions-1.1.1\AndroidManifest.xml:27:13-40
+182
+183        <receiver
+183-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:29:9-33:20
+184            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+184-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:30:13-85
+185            android:enabled="true"
+185-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:31:13-35
+186            android:exported="false" >
+186-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:32:13-37
+187        </receiver>
+188        <receiver
+188-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:34:9-42:20
+189            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+189-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:35:13-100
+190            android:enabled="true"
+190-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:36:13-35
+191            android:exported="true"
+191-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:37:13-36
+192            android:permission="android.permission.INSTALL_PACKAGES" >
+192-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:38:13-69
+193            <intent-filter>
+193-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:39:13-41:29
+194                <action android:name="com.android.vending.INSTALL_REFERRER" />
+194-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:40:17-79
+194-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:40:25-76
+195            </intent-filter>
+196        </receiver>
+197
+198        <service
+198-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:44:9-47:40
+199            android:name="com.google.android.gms.measurement.AppMeasurementService"
+199-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:45:13-84
+200            android:enabled="true"
+200-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:46:13-35
+201            android:exported="false" />
+201-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:47:13-37
+202        <service
+202-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:48:9-52:72
+203            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+203-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:49:13-87
+204            android:enabled="true"
+204-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:50:13-35
+205            android:exported="false"
+205-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:51:13-37
+206            android:permission="android.permission.BIND_JOB_SERVICE" />
+206-->[com.google.firebase:firebase-analytics:16.0.3] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\f83cdd349b014035f2dc5f56f17e7f13\firebase-analytics-16.0.3\AndroidManifest.xml:52:13-69
+207
+208        <activity
+208-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:23:9-27:75
+209            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+209-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:24:13-93
+210            android:excludeFromRecents="true"
+210-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:25:13-46
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:26:13-37
+212            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+212-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:27:13-72
+213        <!--
+214            Service handling Google Sign-In user revocation. For apps that do not integrate with
+215            Google Sign-In, this service will never be started.
+216        -->
+217        <service
+217-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:33:9-36:110
+218            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+218-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:34:13-89
+219            android:exported="true"
+219-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:35:13-36
+220            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+220-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\c6a3f236cd6943511b3f0c4698930d98\play-services-auth-15.0.1\AndroidManifest.xml:36:13-107
+221
+222        <receiver
+222-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:37:9-44:20
+223            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+223-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:38:13-78
+224            android:exported="true"
+224-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:39:13-36
+225            android:permission="com.google.android.c2dm.permission.SEND" >
+225-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:40:13-73
+226            <intent-filter>
+226-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:41:13-43:29
+227                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+227-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:42:17-81
+227-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:42:25-78
+228            </intent-filter>
+229        </receiver>
+230        <!--
+231             FirebaseInstanceIdService performs security checks at runtime,
+232             no need for explicit permissions despite exported="true"
+233        -->
+234        <service
+234-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:50:9-56:19
+235            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+235-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:51:13-77
+236            android:exported="true" >
+236-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:52:13-36
+237            <intent-filter android:priority="-500" >
+237-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:53:13-55:29
+237-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:53:28-51
+238                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+238-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:54:17-80
+238-->[com.google.firebase:firebase-iid:17.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\51192069de9df28f8e2f905e957e4fb5\firebase-iid-17.0.1\AndroidManifest.xml:54:25-77
+239            </intent-filter>
+240        </service>
+241
+242        <activity
+242-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\16e18e604f7a63b643c432df1b41f853\play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
+243            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+243-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\16e18e604f7a63b643c432df1b41f853\play-services-base-15.0.1\AndroidManifest.xml:24:13-79
+244            android:exported="false"
+244-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\16e18e604f7a63b643c432df1b41f853\play-services-base-15.0.1\AndroidManifest.xml:25:13-37
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+245-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\16e18e604f7a63b643c432df1b41f853\play-services-base-15.0.1\AndroidManifest.xml:26:13-72
+246
+247        <provider
+247-->[com.google.firebase:firebase-common:16.0.2] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0009656012898fc74c87823505cdb030\firebase-common-16.0.2\AndroidManifest.xml:10:9-14:39
+248            android:name="com.google.firebase.provider.FirebaseInitProvider"
+248-->[com.google.firebase:firebase-common:16.0.2] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0009656012898fc74c87823505cdb030\firebase-common-16.0.2\AndroidManifest.xml:11:13-77
+249            android:authorities="com.stocksbuyalerts.alexey.zonetradingalerts.firebaseinitprovider"
+249-->[com.google.firebase:firebase-common:16.0.2] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0009656012898fc74c87823505cdb030\firebase-common-16.0.2\AndroidManifest.xml:12:13-72
+250            android:exported="false"
+250-->[com.google.firebase:firebase-common:16.0.2] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0009656012898fc74c87823505cdb030\firebase-common-16.0.2\AndroidManifest.xml:13:13-37
+251            android:initOrder="100" />
+251-->[com.google.firebase:firebase-common:16.0.2] C:\Users\PRATIK\.gradle\caches\transforms-2\files-2.1\0009656012898fc74c87823505cdb030\firebase-common-16.0.2\AndroidManifest.xml:14:13-36
+252    </application>
+253
+254</manifest>

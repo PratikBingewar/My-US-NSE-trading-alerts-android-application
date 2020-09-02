@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">37172624888-gev7nndrmrsdjg86itu44bte4ahspvbk.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sbatest-b6cc2.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">37172624888</string>
+    <string name="google_api_key" translatable="false">AIzaSyDMc4AjVJMkPD_OKKt6kWt2fFgJp712IuY</string>
+    <string name="google_app_id" translatable="false">1:37172624888:android:e7fe772e07b2615c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDMc4AjVJMkPD_OKKt6kWt2fFgJp712IuY</string>
+    <string name="google_storage_bucket" translatable="false">sbatest-b6cc2.appspot.com</string>
+    <string name="project_id" translatable="false">sbatest-b6cc2</string>
+</resources>
